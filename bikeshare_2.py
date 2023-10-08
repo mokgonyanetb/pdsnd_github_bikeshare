@@ -176,7 +176,7 @@ def user_stats(df):
     print('-'*50)
     
 def display_raw_data(df):
-    """Displays Raw Data"""
+    """Displays 10 rows of Raw Data for the chosen city"""
     
     start_time = time.time()
     
