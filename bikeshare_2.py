@@ -45,7 +45,7 @@ def get_filters():
         else:
             print("Invalid input. Please enter one of the specified days (monday, tuesday, wednesday, thursday, friday, saturday, sunday, or all).")
 
-    print('-'*50)
+    print('*'*50)
     return city, month, day
 
 
@@ -95,13 +95,13 @@ def time_stats(df):
     print(f"The most common month is: {months[df['month'].value_counts().idxmax()-1].title()}")
 
     # TO DO: display the most common day of week
-    print(f"The most common day of week is: {df['day_of_week'].value_counts().idxmax()}")
+    print(f"The most common day of week is: {df['day_of_week'].mode()[0]}")
 
     # TO DO: display the most common start hour
     print(f"The most common start hour is: {df['hour'].mode()[0]}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('*'*50)
 
 
 def station_stats(df):
@@ -123,7 +123,7 @@ def station_stats(df):
     print(f"The most frequent combination of start station and end station trip is: {most_frequent_combination[0]} and {most_frequent_combination[1]}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('*'*50)
 
 
 def trip_duration_stats(df):
@@ -140,7 +140,7 @@ def trip_duration_stats(df):
     print(f"The total travel time is: {df['Trip Duration'].mean()}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('*'*50)
 
 
 def user_stats(df):
@@ -173,7 +173,7 @@ def user_stats(df):
         print('Birth Year stats cannot be calculated because Birth Year does not appear in the dataframe')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('*'*50)
     
 def display_raw_data(df):
     """Displays 10 rows of Raw Data for the chosen city"""
@@ -198,7 +198,12 @@ def display_raw_data(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('*'*50)
+
+def visualizations(df):
+    """Creating visualizations for data presentation."""
+
+    print('*'*50)
             
 def main():
     while True:
