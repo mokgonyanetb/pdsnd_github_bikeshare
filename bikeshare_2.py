@@ -199,6 +199,11 @@ def display_raw_data(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('*'*50)
+
+def visualizations(df):
+    """Creating visualizations for data presentation."""
+
+    print('*'*50)
             
 def main():
     while True:
