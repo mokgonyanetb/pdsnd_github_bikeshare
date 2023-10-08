@@ -98,7 +98,7 @@ def time_stats(df):
     print(f"The most common day of week is: {df['day_of_week'].value_counts().idxmax()}")
 
     # TO DO: display the most common start hour
-    print(f"The most common start hour is: {df['hour'].value_counts().idxmax()}")
+    print(f"The most common start hour is: {df['hour'].mode()[0]}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -184,7 +184,7 @@ def display_raw_data(df):
     chunk_size = 10
 
     while True:
-        show_data = input("Would you like to see 5 rows of raw data? Enter yes or no: ").strip().lower()
+        show_data = input("Would you like to see 10 rows of raw data? Enter yes or no: ").strip().lower()
 
         if show_data == 'yes':
             end_row = start_row + chunk_size
