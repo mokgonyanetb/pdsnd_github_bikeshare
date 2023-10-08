@@ -181,7 +181,7 @@ def display_raw_data(df):
     start_time = time.time()
     
     start_row = 0
-    chunk_size = 5
+    chunk_size = 10
 
     while True:
         show_data = input("Would you like to see 5 rows of raw data? Enter yes or no: ").strip().lower()
