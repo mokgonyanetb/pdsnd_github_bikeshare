@@ -13,9 +13,9 @@ In this project, we use data provided by Motivate, a bike share system provider 
 
 ### Files used
 - bikeshare_2.py: The bikeshare.py file is set up as a script that takes in raw input to create an interactive experience in the terminal that answers questions about the dataset.
-- chicago.csv: The dataset set containing Chicago City data
-- new_york_city.csv: The dataset set containing New York City data
-- washington.csv: The dataset set containing Washington City data
+- data/chicago.csv: The dataset set containing Chicago City data.
+- data/new_york_city.csv: The dataset set containing New York City data.
+- data/washington.csv: The dataset set containing Washington City data.
 
 ## An Interactive Experience
 The experience is interactive because depending on a user's input, the answers to the questions on the previous page will change! There are four questions that will change the answers:
